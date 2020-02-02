@@ -1,0 +1,22 @@
+// https://www.typescriptlang.org/docs/handbook/compiler-options.html
+{
+	"compilerOptions": {
+		// Node.js 10
+		"target": "ES2018",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"jsx": "react",
+		"newLine": "lf",
+		"declaration":true,
+		"stripInternal": true,
+		"resolveJsonModule": true,
+		"strict": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noEmitOnError": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
+	}
+}
