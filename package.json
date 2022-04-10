@@ -1,6 +1,6 @@
 {
 	"name": "@yme/tsconfig",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "shared typescript config.",
 	"keywords": [
 		"tsconfig",
