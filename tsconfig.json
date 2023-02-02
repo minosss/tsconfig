@@ -3,13 +3,12 @@
 	"compilerOptions": {
 		// Node.js 14
 		"target": "ES2020",
-		// 要生成什么格式 CommonJS = node, ES2020 = ESM
-		"module": "CommonJS",
+		"module": "node16", // ts4.7+
 		"lib": ["ES2020", "DOM", "DOM.Iterable"],
-		// Specify how TypeScript looks up a file from a given module specifier.
-		// 查找模块的方式
-		"moduleResolution": "Node",
-		"jsx": "react",
+		// node (cjs), node16/nodenext (esm)
+		"moduleResolution": "node16",
+		// https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
+		"jsx": "react-jsx", // Emit .js files with the JSX changed to _jsx calls
 		// Set the newline character for emitting files.
 		// 后面加个新行
 		"newLine": "lf",
@@ -17,7 +16,7 @@
 		"pretty": true,
 		// Enable importing .json files
 		// 可以导入 json 文件
-		"resolveJsonModule": true,
+		"resolveJsonModule": false,
 		// 严格模式，开了一些默认的选项 比如 noImplicitAny, noImplicitThis
 		"strict": true,
 		"noImplicitReturns": true,

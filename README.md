@@ -4,6 +4,8 @@
 $ npm install @yme/tsconfig --save-dev
 ```
 
+**ts4.7+ and node14+**
+
 ```
 {
 	"extends": "@yme/tsconfig",
